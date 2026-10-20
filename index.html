@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Autobot - Instagram Comment Automation Tool</title>
+  <meta name="description" content="Privacy Policy for Autobot - Instagram Comment Automation Tool. Learn what data is collected, how comments are processed, how data is protected, and how to request data deletion.">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20width=%2232%22%20height=%2232%22><text y=%2224%22 font-size=%2224%22>🤖</text></svg>">
+  <style>
+    /* CSS Reset & Design Tokens */
+    :root {
+      --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --text-light: #94a3b8;
+      --border-color: #e2e8f0;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --primary-subtle: #eff6ff;
+      --accent: #4f46e5;
+      --badge-bg: #e0e7ff;
+      --badge-text: #3730a3;
+      --notice-bg: #f0fdf4;
+      --notice-border: #bbf7d0;
+      --notice-text: #166534;
+      --radius: 12px;
+      --max-width: 860px;
+      --transition: all 0.2s ease-in-out;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #0f172a;
+        --card-bg: #1e293b;
+        --text-main: #f1f5f9;
+        --text-muted: #94a3b8;
+        --text-light: #64748b;
+        --border-color: #334155;
+        --primary: #3b82f6;
+        --primary-hover: #60a5fa;
+        --primary-subtle: #1e293b;
+        --badge-bg: #312e81;
+        --badge-text: #c7d2fe;
+        --notice-bg: #064e3b;
+        --notice-border: #059669;
+        --notice-text: #a7f3d0;
+      }
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      line-height: 1.7;
+      color: var(--text-main);
+      background-color: var(--bg-color);
+      padding: 3rem 1.25rem;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    /* Document Card */
+    .document-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      padding: 3rem 3.5rem;
+    }
+
+    /* Header */
+    header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .app-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      font-weight: 600;
+      font-size: 0.875rem;
+      padding: 0.4rem 0.9rem;
+      border-radius: 9999px;
+      margin-bottom: 1.25rem;
+    }
+
+    .app-brand span {
+      font-size: 1.1rem;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+      color: var(--text-main);
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-size: 0.875rem;
+      color: var(--text-light);
+    }
+
+    .meta-bar strong {
+      color: var(--text-muted);
+    }
+
+    /* Table of contents */
+    .toc {
+      background-color: var(--bg-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .toc h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .toc ul {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 0.5rem 1.5rem;
+    }
+
+    .toc a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.925rem;
+      transition: var(--transition);
+    }
+
+    .toc a:hover {
+      text-decoration: underline;
+      color: var(--primary-hover);
+    }
+
+    /* Content Typography */
+    section {
+      margin-bottom: 2.5rem;
+      scroll-margin-top: 2rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin: 1.5rem 0 0.5rem 0;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul, ol {
+      color: var(--text-muted);
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--primary-hover);
+    }
+
+    /* Notice & Callout Cards */
+    .callout {
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.25rem 0;
+      font-size: 0.95rem;
+    }
+
+    .callout-deletion {
+      background-color: var(--notice-bg);
+      border: 1px solid var(--notice-border);
+      color: var(--notice-text);
+    }
+
+    .callout-deletion h3 {
+      color: var(--notice-text);
+      margin-top: 0;
+    }
+
+    .callout-deletion p, .callout-deletion ol {
+      color: var(--notice-text);
+    }
+
+    .callout-highlight {
+      background-color: var(--primary-subtle);
+      border: 1px solid var(--border-color);
+    }
+
+    /* Step Badge */
+    .step-list {
+      list-style: none;
+      padding-left: 0;
+      counter-reset: step-counter;
+      margin-top: 1rem;
+    }
+
+    .step-list li {
+      counter-increment: step-counter;
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+
+    .step-list li::before {
+      content: counter(step-counter);
+      background-color: var(--primary);
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 0.85rem;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0.75rem;
+      flex-shrink: 0;
+      margin-top: 0.15rem;
+    }
+
+    /* Contact Box */
+    .contact-box {
+      background-color: var(--bg-color);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .contact-email {
+      font-size: 1.1rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 0.25rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding-top: 2rem;
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--text-light);
+    }
+
+    /* Print styling */
+    @media print {
+      body {
+        background-color: #ffffff;
+        color: #000000;
+        padding: 0;
+      }
+      .document-card {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+      }
+      .toc {
+        display: none;
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 640px) {
+      body {
+        padding: 1.5rem 1rem;
+      }
+      .document-card {
+        padding: 1.75rem 1.25rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+      }
+      .toc ul {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <main class="document-card">
+      <header>
+        <div class="app-brand">
+          <span>🤖</span>
+          <strong>Autobot</strong> · Instagram Automation
+        </div>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Comprehensive overview of how Autobot handles, processes, and protects your data.</p>
+        <div class="meta-bar">
+          <div><strong>Effective Date:</strong> October 20, 2026</div>
+          <div><strong>Last Updated:</strong> October 20, 2026</div>
+          <div><strong>Official Contact:</strong> <a href="mailto:pramodsoni2290@gmail.com">pramodsoni2290@gmail.com</a></div>
+        </div>
+      </header>
+
+      <!-- Table of Contents -->
+      <nav class="toc" aria-label="Table of contents">
+        <h2>Contents</h2>
+        <ul>
+          <li><a href="#introduction">1. Introduction &amp; Purpose</a></li>
+          <li><a href="#data-collection">2. Data We Collect</a></li>
+          <li><a href="#comment-processing">3. How Instagram Comments Are Processed</a></li>
+          <li><a href="#data-use">4. How We Use Information</a></li>
+          <li><a href="#data-protection">5. Data Protection &amp; Security</a></li>
+          <li><a href="#meta-compliance">6. Meta Platform &amp; API Compliance</a></li>
+          <li><a href="#data-deletion">7. User Data Deletion Instructions</a></li>
+          <li><a href="#user-rights">8. Your Rights &amp; Choices</a></li>
+          <li><a href="#policy-updates">9. Policy Updates</a></li>
+          <li><a href="#contact">10. Contact Information</a></li>
+        </ul>
+      </nav>
+
+      <!-- Section 1 -->
+      <section id="introduction">
+        <h2>1. Introduction &amp; Purpose</h2>
+        <p>
+          Welcome to <strong>Autobot</strong> ("we", "our", or "us"). Autobot is an Instagram comment automation tool designed to help creators, businesses, and account holders automatically detect comments on their Instagram posts and deliver immediate, helpful replies or direct message triggers via official Meta/Instagram APIs.
+        </p>
+        <p>
+          We are committed to transparency and respect for your privacy. This Privacy Policy details our practices concerning data collection, transmission, processing, security, and deletion when you interact with Autobot.
+        </p>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="data-collection">
+        <h2>2. Data We Collect</h2>
+        <p>
+          Autobot adheres strictly to the principle of data minimization. We only access and process information that is strictly required to execute automated comment responses:
+        </p>
+
+        <h3>A. Information Provided via the Instagram Graph API</h3>
+        <ul>
+          <li><strong>Instagram Account Identifiers:</strong> Your Instagram Business or Creator Account ID and public username/handle.</li>
+          <li><strong>Media Information:</strong> Instagram post IDs, reels IDs, captions, and permalinks necessary to associate comments with specific posts.</li>
+          <li><strong>Comment Data:</strong> Comment text, comment ID, author username, and comment creation timestamp received through Meta Webhooks.</li>
+        </ul>
+
+        <h3>B. Technical &amp; Operational Logs</h3>
+        <ul>
+          <li><strong>Server Logs:</strong> HTTP request metadata, timestamps, response status codes, and error tracebacks strictly used for real-time monitoring and debugging.</li>
+        </ul>
+
+        <h3>C. Information We Do NOT Collect</h3>
+        <ul>
+          <li>We <strong>never</strong> ask for, collect, or store your Instagram password. Authentication is handled exclusively through official Meta OAuth access tokens.</li>
+          <li>We do <strong>not</strong> collect financial, payment, or credit card information.</li>
+          <li>We do <strong>not</strong> collect sensitive personal data such as government IDs, biometrics, or health data.</li>
+        </ul>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="comment-processing">
+        <h2>3. How Instagram Account Data &amp; Comments Are Processed</h2>
+        <p>
+          Autobot processes comment events in real-time utilizing official Meta Webhook subscriptions:
+        </p>
+        <ol>
+          <li>
+            <strong>Real-Time Webhook Reception:</strong> When a user posts a comment on your connected Instagram media, Meta sends a webhook payload to our secure endpoint containing the comment ID, comment text, and author ID.
+          </li>
+          <li>
+            <strong>Trigger Matching:</strong> Autobot parses the comment text against rule triggers configured by the account owner (for example, matching keywords like <em>"link"</em>, <em>"price"</em>, or <em>"guide"</em>).
+          </li>
+          <li>
+            <strong>Action Dispatch:</strong> If a keyword match occurs, Autobot executes the automated action (e.g., publishing a public comment reply or sending an automated direct message) via the Instagram Graph API.
+          </li>
+          <li>
+            <strong>Transient In-Memory Processing:</strong> Comment text is evaluated in-flight. We do not maintain perpetual relational databases of comment histories beyond what is technically required for deduplication, rate limit enforcement, and short-term operational error logging.
+          </li>
+        </ol>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="data-use">
+        <h2>4. How We Use Information</h2>
+        <p>All information accessed by Autobot is used solely for the following legitimate purposes:</p>
+        <ul>
+          <li>To provide, operate, and maintain the automated comment reply functionality.</li>
+          <li>To fulfill requested automation rules configured by the authenticated account holder.</li>
+          <li>To monitor system health, diagnose technical issues, prevent API rate-limit violations, and ensure uptime.</li>
+          <li>To prevent fraudulent activity, spam, and abuse in compliance with Meta's developer policies.</li>
+        </ul>
+        <p>
+          We do <strong>not</strong> sell, rent, monetize, or distribute your personal or Instagram account data to advertisers, data brokers, or any third parties.
+        </p>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="data-protection">
+        <h2>5. Data Protection &amp; Security</h2>
+        <p>
+          We take appropriate technical and organizational measures to safeguard all information transmitted through Autobot:
+        </p>
+        <ul>
+          <li><strong>Encryption in Transit:</strong> All communications between Meta servers, our webhook endpoints, and clients are encrypted using modern Transport Layer Security (HTTPS/TLS).</li>
+          <li><strong>Token Security:</strong> API tokens and webhook verification secrets are isolated in protected environment variables and are never checked into public version control or exposed on the client side.</li>
+          <li><strong>Access Controls:</strong> Server infrastructure access is strictly restricted to authorized maintenance personnel.</li>
+          <li><strong>Minimal Retention:</strong> Temporary operational logs are automatically purged on a rolling cycle.</li>
+        </ul>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="meta-compliance">
+        <h2>6. Meta Platform &amp; API Compliance</h2>
+        <p>
+          Autobot operates in full accordance with the <a href="https://developers.facebook.com/terms/" target="_blank" rel="noopener noreferrer">Meta Platform Terms</a> and <a href="https://developers.facebook.com/devpolicy/" target="_blank" rel="noopener noreferrer">Developer Policies</a>.
+        </p>
+        <p>
+          We only request the specific API permissions required for comment automation (such as <code>instagram_manage_comments</code> and <code>instagram_basic</code>). Use of information received from Meta APIs adheres to Meta's data handling specifications.
+        </p>
+      </section>
+
+      <!-- Section 7 -->
+      <section id="data-deletion">
+        <h2>7. User Data Deletion Instructions</h2>
+        <p>
+          In accordance with Meta Platform policies, users have complete control over their data and can request deletion at any time without fees.
+        </p>
+
+        <div class="callout callout-deletion">
+          <h3>How to Request or Complete Data Deletion</h3>
+          <p>You can remove your data and revoke Autobot's access using either of the following methods:</p>
+
+          <ul class="step-list">
+            <li>
+              <div>
+                <strong>Option A: Revoke Access via Instagram / Facebook Settings (Instant)</strong>
+                <p>
+                  You can immediately disconnect Autobot from your Instagram account:
+                </p>
+                <ol>
+                  <li>Log in to your Instagram account or connected Facebook Business Page.</li>
+                  <li>Go to <strong>Settings &amp; Privacy</strong> &gt; <strong>Apps and Websites</strong>.</li>
+                  <li>Find <strong>Autobot</strong> under the active apps list.</li>
+                  <li>Click <strong>Remove</strong> to instantly revoke all permissions and webhook subscriptions.</li>
+                </ol>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Option B: Submit a Manual Data Deletion Request via Email</strong>
+                <p>
+                  To request complete deletion of any logs or cached identifiers associated with your account:
+                </p>
+                <ol>
+                  <li>Send an email to: <a href="mailto:pramodsoni2290@gmail.com" class="contact-email">pramodsoni2290@gmail.com</a></li>
+                  <li>Use the subject line: <code>Autobot - Data Deletion Request</code></li>
+                  <li>Include your <strong>Instagram handle / username</strong> and associated account details.</li>
+                </ol>
+                <p>
+                  Once received, our team will verify your request and permanently delete all records and identifiers associated with your account from our systems within <strong>30 days</strong>. You will receive an email confirmation once completed.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 8 -->
+      <section id="user-rights">
+        <h2>8. Your Rights &amp; Choices</h2>
+        <p>
+          Depending on your jurisdiction (including under GDPR, CCPA, and similar data protection frameworks), you hold specific rights regarding your personal information:
+        </p>
+        <ul>
+          <li><strong>Right to Access:</strong> You may request confirmation of whether we process any personal data relating to you.</li>
+          <li><strong>Right to Rectification:</strong> You may request correction of inaccurate or incomplete information.</li>
+          <li><strong>Right to Erasure:</strong> You may request that we delete all your stored data as detailed in Section 7.</li>
+          <li><strong>Right to Restrict or Object:</strong> You may object to data processing or withdraw consent at any time by disconnecting your Instagram account.</li>
+        </ul>
+      </section>
+
+      <!-- Section 9 -->
+      <section id="policy-updates">
+        <h2>9. Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy periodically to reflect enhancements to our tool, changes in Meta API policies, or applicable legal requirements. The updated version will always be posted on this page with an updated "Last Updated" date. We encourage you to review this policy periodically.
+        </p>
+      </section>
+
+      <!-- Section 10 -->
+      <section id="contact">
+        <h2>10. Contact Information</h2>
+        <p>
+          If you have any questions, feedback, security disclosures, or privacy-related requests regarding Autobot or this Privacy Policy, please contact us directly:
+        </p>
+        <div class="contact-box">
+          <p><strong>Autobot Support &amp; Privacy Desk</strong></p>
+          <p>Email: <a href="mailto:pramodsoni2290@gmail.com" class="contact-email">pramodsoni2290@gmail.com</a></p>
+          <p>Response Time: Typically within 24–48 business hours</p>
+        </div>
+      </section>
+
+      <footer>
+        <p>&copy; 2026 Autobot. All rights reserved.</p>
+        <p>Autobot is an independent automation tool and is not officially affiliated with, endorsed by, or sponsored by Instagram or Meta Platforms, Inc.</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
